@@ -3,7 +3,7 @@
     <div id="nav">
       <router-link to="/">Home</router-link>
     </div>
-    <router-view msg="new message"></router-view>
+    <router-view msg="this has nothing to do with test"></router-view>
   </div>
 </template>
 

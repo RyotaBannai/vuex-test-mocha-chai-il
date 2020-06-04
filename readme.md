@@ -1,24 +1,4 @@
-# app-create-test
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Test 
+- `shallowMount` メソッドを使って`子コンポーネントを（スタブによって）描画せずに`コンポーネントをマウントすることができる。
+- 普通にchild component もマウントする場合は　`mount`
+- `mutation and actions unit test`(https://vuex.vuejs.org/ja/guide/testing.html)

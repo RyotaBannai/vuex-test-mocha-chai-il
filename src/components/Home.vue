@@ -1,32 +1,41 @@
 <template>
   <div class="top">
-    <p>new message</p>
+    <p>{{ msg }}</p>
+    <Child v-on:child_clicked="handler"></Child>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
+  import Child from './Child'
+  export default {
+    name: 'HelloWorld',
+    props: {
+      msg: String
+    },
+    components: {
+      Child
+    },
+    methods: {
+      handler: function() {
+        console.log('nothing special');
+      }
+    }
   }
-}
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  h3 {
+    margin: 40px 0 0;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  a {
+    color: #42b983;
+  }
 </style>

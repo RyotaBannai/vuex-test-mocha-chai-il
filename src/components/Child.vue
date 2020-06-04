@@ -1,10 +1,12 @@
 <template>
-    
+    <div>
+       <button type="button" @click="$emit('child_clicked')">Clicked Me!</button>
+    </div>
 </template>
 
 <script>
     export default {
-        name: "Chils"
+        name: "Child"
     }
 </script>
 
